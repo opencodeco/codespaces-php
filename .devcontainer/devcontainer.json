@@ -1,0 +1,31 @@
+{
+    "image": "opencodeco/phpctl:php83-devcontainer",
+    "hostRequirements": {
+      "cpus": 4
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "composer install",
+    "postCreateCommand": "",
+    "postAttachCommand": {
+      "server": "composer start"
+    },
+    "customizations": {
+      "codespaces": {
+        "openFiles": [
+          "public/index.php"
+        ]
+      },
+      "vscode": {
+          "extensions": [
+              "phpactor.vscode-phpactor"
+          ]
+      }
+    },
+    "portsAttributes": {
+      "8080": {
+        "label": "Application",
+        "onAutoForward": "openPreview"
+      }
+    },
+    "forwardPorts": [8080]
+}

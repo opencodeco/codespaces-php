@@ -1,0 +1,12 @@
+{
+    "name": "opencodeco/codespaces-php",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {},
+    "scripts": {
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S 0.0.0.0:8080 -t public"
+        ]
+    }
+}
