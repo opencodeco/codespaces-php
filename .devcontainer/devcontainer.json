@@ -1,8 +1,5 @@
 {
     "image": "opencodeco/phpctl:php83-devcontainer",
-    "hostRequirements": {
-      "cpus": 4
-    },
     "waitFor": "onCreateCommand",
     "updateContentCommand": "composer install",
     "postCreateCommand": "",
